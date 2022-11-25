@@ -1,0 +1,37 @@
+﻿[
+    {
+        "id": 1,
+        "title": "Introduction",
+        "subTitle": "Lorem ipsum dolor sit amet",
+        "videoURL": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
+        "transcript": "Use Xamarin.Forms built in pages, layouts, and controls to build and design mobile apps from a single API that is highly extensible. Subclass any control to customize their behavior or define your own controls, layouts, pages, and cells to make your app pixel perfect."
+    },
+    {
+        "id": 2,
+        "title": "Xamarin at firts glance",
+        "subTitle": "Lorem ipsum dolor sit amet",
+        "videoURL": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
+        "transcript": "Use Xamarin.Forms built in pages, layouts, and controls to build and design mobile apps from a single API that is highly extensible. Subclass any control to customize their behavior or define your own controls, layouts, pages, and cells to make your app pixel perfect."
+    },
+    {
+        "id": 3,
+        "title": "Xamarin.Froms at firts glance",
+        "subTitle": "Lorem ipsum dolor sit amet",
+        "videoURL": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
+        "transcript": "Use Xamarin.Forms built in pages, layouts, and controls to build and design mobile apps from a single API that is highly extensible. Subclass any control to customize their behavior or define your own controls, layouts, pages, and cells to make your app pixel perfect."
+    },
+    {
+        "id": 4,
+        "title": "How to start a Xamarin Forms Application",
+        "subTitle": "Lorem ipsum dolor sit amet",
+        "videoURL": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
+        "transcript": "Use Xamarin.Forms built in pages, layouts, and controls to build and design mobile apps from a single API that is highly extensible. Subclass any control to customize their behavior or define your own controls, layouts, pages, and cells to make your app pixel perfect."
+    },
+    {
+        "id": 5,
+        "title": "Xamarin project structure: Shared module",
+        "subTitle": "Lorem ipsum dolor sit amet",
+        "videoURL": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
+        "transcript": "Use Xamarin.Forms built in pages, layouts, and controls to build and design mobile apps from a single API that is highly extensible. Subclass any control to customize their behavior or define your own controls, layouts, pages, and cells to make your app pixel perfect."
+    }
+]

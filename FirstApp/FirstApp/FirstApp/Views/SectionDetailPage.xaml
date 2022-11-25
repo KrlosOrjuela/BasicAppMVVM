@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="FirstApp.Views.SectionDetailPage"
+    NavigationPage.HasNavigationBar="True"
+    xmlns:ViewModel="clr-namespace:FirstApp.ViewModels"
+    BackgroundColor="{x:StaticResource PageBackgroundColor}"
+    xmlns:LibVl="clr-namespace:LibVLCSharp.Forms.Shared;assembly=LibVLCSharp.Forms">
+
+    <ContentPage.BindingContext>
+        <ViewModel:VMSectionDetailPage />
+    </ContentPage.BindingContext>
+
+    <ContentPage.Content>
+        <StackLayout
+            Margin="20"
+            Spacing="20"
+            VerticalOptions="StartAndExpand"
+            HorizontalOptions="FillAndExpand">
+            <Label
+                FontSize="25"
+                FontAttributes="Bold"
+                Text="{Binding Title}"
+                VerticalOptions="Start"
+                HorizontalOptions="Start"
+                TextColor="{x:StaticResource LightTextColorPage}"/>
+
+            <Grid>
+                <LibVl:MediaPlayerElement
+                    x:Name="VideoView"
+                    HeightRequest="300"
+                    LibVLC="{Binding LibVLC}" 
+                    BackgroundColor="DarkSlateGray"
+                    HorizontalOptions="FillAndExpand"
+                    MediaPlayer="{Binding MediaPlayer}"
+                    />
+            </Grid>
+
+            <Label
+                FontSize="18"
+                VerticalOptions="Start"
+                HorizontalOptions="Start"
+                Text="{Binding Transcript}"
+                TextColor="{x:StaticResource LightTextColorPage}"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
+

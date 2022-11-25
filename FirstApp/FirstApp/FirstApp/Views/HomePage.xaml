@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="FirstApp.HomePage"
+    Title="Xamarin Forms with MVVM"
+    NavigationPage.HasNavigationBar="True"
+    xmlns:localResource="clr-namespace:FirstApp"
+    xmlns:localControls="clr-namespace:FirstApp.Controls"
+    BackgroundColor="{x:StaticResource PageBackgroundColor}">
+
+    <ContentPage.BindingContext>
+        <localResource:VMHomePage />
+    </ContentPage.BindingContext>
+
+    <ContentPage.Content>
+        <Grid
+            RowDefinitions="*">
+            <localControls:ExtendedListView
+                RowHeight="120"
+                SelectionMode="None"
+                SeparatorVisibility="None"
+                BackgroundColor="Transparent"
+                VerticalOptions="StartAndExpand"
+                HorizontalOptions="FillAndExpand"
+                ItemsSource="{Binding CourseServices}"
+                ItemTapCommand="{Binding ItemSelectedCommand}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Frame
+                                Margin="10"
+                                CornerRadius="10"
+                                BackgroundColor="Green">
+                                <StackLayout
+                                    Spacing="10"
+                                    VerticalOptions="StartAndExpand">
+                                    <Label
+                                        Text="{Binding Id, StringFormat='Lecture {0}'}"
+                                        FontSize="20"
+                                        FontAttributes="Bold"
+                                        TextColor="{x:StaticResource LightTextColorPage}"/>
+
+                                    <Label
+                                        Text="{Binding Title}"
+                                        FontSize="17"
+                                        FontAttributes="Bold"
+                                        TextColor="{x:StaticResource LightTextColorPage}"/>
+                                </StackLayout>
+                            </Frame>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </localControls:ExtendedListView>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
+
